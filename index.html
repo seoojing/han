@@ -907,6 +907,9 @@ a4 { font-weight:bold;
 		<img src="go.png">
 	</div>
 
+	<audio id="beepi">
+		<source src="beep.mp3" type="audio/mpeg">
+	</audio>
 
 <audio id="walk">
 		<source src="walk.mp3" type="audio/mpeg">
@@ -1408,7 +1411,8 @@ a4 { font-weight:bold;
 
 var on = true;
 
-
+	soun11.onclick = function(){
+		beepi.play();}	
 		
 function lookDiv (){ 
   document.getElementById("hin2").style.display="none"; 
@@ -1650,7 +1654,7 @@ function lookDiv14 (){
 			bx.style.display = "inline";
 			ooo.style.display = "inline";
 			poom2.style.display = "inline";
-			self.setTimeout("lookDiv4()",3000);
+			self.setTimeout("lookDiv4()",700);
 			}
 	ooo.onclick = function(){
 		but.play();
